@@ -1,0 +1,14 @@
+<script>
+
+var arr = ['a', 'b','c','d','e','f','g' ]
+var text ='';
+for(var i=0; i<arr.length; i++){
+  text += arr[i]; + "\n" //알파벳이 줄바꿈되어 
+//textarea value <- arr[i];
+}
+//데이터만드는것만 여러번 하고 출력은 간단히 
+//내용물을 한방에 집어넣는다
+document.querySelector('textarea').value = text;
+
+//디비로 갈때에는 html가서는 <br>로 줄바꿈으로 표시해줘야
+</script>

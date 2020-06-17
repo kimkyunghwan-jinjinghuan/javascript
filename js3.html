@@ -1,0 +1,29 @@
+<script>
+
+var arr = [] ; //var arr = new Array();
+arr[0] = 0; 
+arr[10000] = 1000;
+
+arr["index"] ="hi";
+arr["index"] = "index";
+
+
+console.log(arr[0], arr[10000]);
+
+console.log(arr["index"], arr["index"]);
+
+
+
+// key-value형식으로 배열에 담을 수 있네
+// 인덱스를 반복문으로 돌릴 수 있는데 인덱스가 문자인경우에도 잘 사용하려면 for-each문 사용하여 
+
+var arr = ['주꾸미', '문어숙회', '가숭어', '대패삼겹살'];
+ var str = arr.join('#');
+ console.log(str);
+
+ var str = '루피,조로,상디,나미';
+ var arr = str.split(',').reverse();
+ str = arr.join(',');
+ console.log(str);
+ 
+</script>

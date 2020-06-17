@@ -1,0 +1,42 @@
+<html>
+
+<head>
+  <script>
+
+    var add2 = function(){
+      var tag = "";
+      tag += "<tr>"
+      tag += "<td>A</td><td>B</td>";
+      tag += "</tr>"
+      document.querySelector("#table").innerHTML += tag; //HTML제어할때 docuemnt.querySelector
+    };
+
+
+    var add = function () { //function()자체는 익명함수 사용은 add()을 통해서 바로 사용!
+      var tag = "";
+      tag += "<ul>";
+      tag += "<li>Test</li>";
+      tag += "</ul>";
+      document.body.innerHTML += tag;
+    };
+  </script>
+</head>
+
+<body>
+  <input type="button" value="Tag Change" onclick="add()">
+  <table id="table" onclick="add2()">
+    <tr>
+      <td>이름</td>
+      <td>혈액형</td>
+    </tr>
+
+  </table>
+</body>
+
+</html>
+
+<!-- innerHTML -->
+
+
+<!-- var add2 = function(){}; -->
+

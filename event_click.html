@@ -1,0 +1,41 @@
+<html>
+
+<head>
+  <script>
+
+    var str = '';
+    str += '<ul>';
+    str += '<li>A</li>';
+    str += '<li>B</li>';
+    str += '<li>C</li>';
+    str += '</ul>';
+    document.write(str);
+
+
+    function fnClick(obj) { //obj로 객체
+      var z = alert;
+      z('hi!'); // '()' 함수를 나나내는 ()기호 ,{}객체, []배열 z() alert()
+
+      var a = 10;
+      var b = 100;
+      var tem = `${a} 더하기 ${b}`;
+      alert(tem);
+      console.dir(obj); //directory가 뭐냐
+      console.log(obj.name); //id가 나오고, style은 dir으로 찍어봐서 알게된다
+      obj.style.backgroundColor = 'red';
+    }
+
+  </script>
+</head>
+<!-- 태그객체 -->
+
+<body>
+  <form>
+    <input type="text" name="id" value="아이디1" onclick="fnClick(this)">
+    <input type="text" name="id" value="아이디2">
+  </form>
+</body>
+
+</html>
+
+<!-- 디버깅시 console.log로 -->

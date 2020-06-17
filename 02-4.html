@@ -1,0 +1,32 @@
+<script>
+  var str = prompt('문장을 입력해주세요.');
+  // 코드 작성
+  console.log(str);
+  console.log(typeof (str));
+
+
+  var reversedStr = "";
+  for (var i = str.length; 0 <= i; i--) {
+    reversedStr += str.charAt(i);
+  };
+  console.log(reversedStr);
+
+  //입력받은 문자열을 배열로 , 그 다음에 reverse()
+
+
+
+// console.log(typeof(str)); //string
+// console.log(arr.reverse(0));
+
+
+
+//방법
+// var arr = str.split('');
+// arr = arr.reverse();
+// str = arr.join('');
+
+//chaining방법
+// str = str.split('').reverse().join(''); 하나씩쪼갠다('') charAt단위로
+
+
+</script>
